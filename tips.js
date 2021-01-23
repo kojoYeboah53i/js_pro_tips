@@ -79,5 +79,8 @@ const change ={million:'50', rich:'yes' }
 
         function horseAge(str, age){
             const ageStr = age > 5 ? 'old' : 'young';
-            return `${str[0]} ${ageStr} `;
+            return `${str[0]} ${ageStr} at ${age} years`;
         }
+
+        const bio2 = horseAge `The horse is ${horse.age}`;
+        console.log(bio2)
