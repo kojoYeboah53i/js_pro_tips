@@ -79,5 +79,5 @@ const change ={million:'50', rich:'yes' }
 
         function horseAge(str, age){
             const ageStr = age > 5 ? 'old' : 'young';
-            return ``;
+            return `${str[0]} ${ageStr} `;
         }
