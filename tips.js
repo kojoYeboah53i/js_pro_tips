@@ -22,3 +22,7 @@ const change ={million:'50', rich:'yes' }
         }
         console.timeEnd('looper') //endtime
 
+        //stack trace
+        const button = () => console.trace("button clicked")
+        button()
+        button()
