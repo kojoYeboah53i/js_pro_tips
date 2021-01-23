@@ -54,3 +54,18 @@ const change ={million:'50', rich:'yes' }
         }
         console.log(Feed(turtle))
         console.log('😁');
+
+        //string literals
+
+        const horse = {
+            name : 'Topher',
+            size : 'large',
+            skills : ['jousting', 'racing'],
+            age : 7
+        }
+
+        //bad way
+
+        let bio = horse.name + 'is a ' + horse.size + 'skilled in' + horse.skills.join('and')
+
+        console.log(bio)
