@@ -66,6 +66,18 @@ const change ={million:'50', rich:'yes' }
 
         //bad way
 
-        let bio = horse.name + 'is a ' + horse.size + 'skilled in' + horse.skills.join('and')
+        let bio = horse.name + ' is a ' + horse.size + ' horse skilled in ' + horse.skills.join(' and ')
 
         console.log(bio)
+
+        //good way is use backticks
+        const {name, size, skills} = horse;
+        bio = `${name}  is a ${size} horse skilled in ${skills.join(' & ')}`
+        console.log(bio)
+        
+        //function programming
+
+        function horseAge(str, age){
+            const ageStr = age > 5 ? 'old' : 'young';
+            return ``;
+        }
