@@ -26,3 +26,28 @@ const change ={million:'50', rich:'yes' }
         const button = () => console.trace("button clicked")
         button()
         button()
+
+        const turtle = {
+            name: 'bob',
+            legs: 'four',
+            shell: true,
+            type: 'amphibious',
+            meal : 10,
+            diet : 'berries'
+        }
+
+        //wrong way to write it
+        function feed(animal){
+            return `feed ${animal.name} ${animal.meal} kilos of ${animal.diet}`;
+        }
+
+        //destructure is the right way
+
+        function Feed({name, meal, diet}){
+            return `feed ${name} ${meal} kilos of ${diet}`;
+        }
+
+        function Fed(animal){
+            const {name, meal, diet} = animal;
+            return `feed ${name} ${meal} kilos of ${diet}`;
+        }
