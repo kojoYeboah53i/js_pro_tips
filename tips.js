@@ -53,3 +53,4 @@ const change ={million:'50', rich:'yes' }
             return `feed ${name} ${meal} kilos of ${diet}`;
         }
         console.log(Feed(turtle))
+        console.log('😁');
