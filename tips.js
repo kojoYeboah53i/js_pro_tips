@@ -35,6 +35,7 @@ const change ={million:'50', rich:'yes' }
             meal : 10,
             diet : 'berries'
         }
+        
 
         //wrong way to write it
         function feed(animal){
@@ -51,3 +52,4 @@ const change ={million:'50', rich:'yes' }
             const {name, meal, diet} = animal;
             return `feed ${name} ${meal} kilos of ${diet}`;
         }
+        console.log(Feed(turtle))
