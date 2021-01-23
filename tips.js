@@ -12,5 +12,13 @@ const change ={million:'50', rich:'yes' }
     //console table 
     console.table([foo, girlfriend,change])
 
-        
-    console.log()
+
+        //console time
+        console.time('looper') //start
+        let i =0;
+        while(i < 1000000) //loop through a million times
+        {
+            i++; //counts show 
+        }
+        console.timeEnd('looper') //endtime
+
